@@ -1,0 +1,29 @@
+{
+    "flowers": [
+        {
+            "id":1,
+            "commonName":"Tulip",
+            "color":"red"
+        },
+        {
+            "id":2,
+            "commonName":"Iris",
+            "color":"purple"
+        },
+        {
+            "id":3,
+            "commonName":"Daisie",
+            "color":"white"
+        },
+        {
+            "id":4,
+            "commonName":"Gerbers",
+            "color":"yellow"
+        },
+        {
+            "id":5,
+            "commonName":"Daffodil",
+            "color":"ivory"
+        }
+    ]
+}
