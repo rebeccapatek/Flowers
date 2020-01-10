@@ -1,4 +1,4 @@
-const RetailerComponent = (retailer) => {
+const RetailerComponent = (retailer, dis) => {
     return `
         <section class="retailer">
             <header>
@@ -10,6 +10,10 @@ const RetailerComponent = (retailer) => {
             <div>
              ${retailer.city}, ${retailer.state}
             </div>
+            <div>
+            ${dis.name}
+            </div>
+
         </section>
     `
 }
