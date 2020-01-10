@@ -25,5 +25,61 @@
             "commonName":"Daffodil",
             "color":"ivory"
         }
+    ],
+    "retailers": [
+        {
+            "id":1,
+            "name":"PewPews Pretties",
+            "address":"123 N. Main St.",
+            "city":"Memphis",
+            "state":"TN",
+            "distributorId":1
+        },
+        {
+            "id":2,
+            "name":"Pedro's Pretties",
+            "address":"45 N. Main St.",
+            "city":"Jackson",
+            "state":"TN",
+            "distributorId":1
+        },
+        {
+            "id":3,
+            "name":"Polly's Pretties",
+            "address":"78 N. Main St.",
+            "city":"Gatlinburg",
+            "state":"TN",
+            "distributorId":2
+        },
+        {
+            "id":4,
+            "name":"Penny's Pretties",
+            "address":"999 N. Main St.",
+            "city":"Murfesborough",
+            "state":"TN",
+            "distributorId":2
+        },
+        {
+            "id":5,
+            "name":"Pete's Pretties",
+            "address":"987 N. Main St.",
+            "city":"Leiper's Fork",
+            "state":"TN",
+            "distributorId":3
+        }
+    ],
+    "distributors": [
+        {
+            "id":1,
+            "name":"Dee's Dist"
+        },
+        {
+            "id":2,
+            "name":"Dan's Distribs"
+        },
+        {
+            "id":3,
+            "name":"Daria's Distribtuon"
+        }
     ]
 }
