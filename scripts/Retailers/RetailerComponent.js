@@ -1,4 +1,4 @@
-const RetailerComponent = (retailer, dis) => {
+const RetailerComponent = (retailer, dis, foundnurseryArray) => {
     return `
         <section class="retailer">
             <header>
@@ -13,6 +13,16 @@ const RetailerComponent = (retailer, dis) => {
             <div>
             ${dis.name}
             </div>
+            <section class="distrib__nursery">
+                Nurseries include:
+                <ol>
+                ${
+                    foundnurseryArray.map(n => {
+                        return `<li>${n.name}</li>`
+                    }).join("")
+                }
+                </ol>
+            </section>
 
         </section>
     `
