@@ -5,9 +5,13 @@ import retailerList from "./Retailers/RetailerList.js";
 import { getDistributors } from "./Distributors/DistributorDataProvider.js";
 import { getNurseries } from "./Nurseries/NurseryDataProvider.js";
 import { getDistributorNurseries } from "./distributornurseryDataProvider.js";
-
+import { getNuseryflowers } from "./nuseryflowerDataProvider.js";
 getFlowers().then(flowerList)
-getDistributors()
-getDistributorNurseries()
-getRetailers().then(retailerList)
-getNurseries().then(getDistributorNurseries)
+getRetailers()
+.then(getDistributors)
+.then(getNurseries)
+.then(getDistributorNurseries)
+.then(getNuseryflowers)
+.then(retailerList)
+    
+                       

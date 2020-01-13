@@ -1,4 +1,4 @@
-const RetailerComponent = (retailer, dis, foundnurseryArray) => {
+const RetailerComponent = (retailer, dis, foundnurseryArray, flowerArray) => {
     return `
         <section class="retailer">
             <header>
@@ -19,6 +19,15 @@ const RetailerComponent = (retailer, dis, foundnurseryArray) => {
                 ${
                     foundnurseryArray.map(n => {
                         return `<li>${n.name}</li>`
+                    }).join("")
+                }
+                </ol>
+            <section class="retailers__flowers"
+                Flowers available at this retailer:
+                <ol>
+                ${
+                    flowerArray.map(f => {
+                        return `<li>${f.commonName}</li>`
                     }).join("")
                 }
                 </ol>
