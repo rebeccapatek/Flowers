@@ -34,18 +34,20 @@ export const retailerList = () => {
 
         // For each nurseryFlowerRelationship object from the join table fetch, filter the nurseryFlowerRelationship objects (fk) that match with the current nursery id (pk)
             const nursFlowRelation = nursFlow.filter(nf => nf.nurseryId === nursery.id)
+            //need to push into a
 
         // Map over each nurseryFlowerRelation object in the new array
             const foundFlowerArray = nursFlowRelation.map(nfr => {
 
           // For each nurseryFlowerRelation object, perform a find on the full flowers array from the fetch and compare the flower object id (pk) to the flowerId (fk) on the nurseryFlowerRelation object
-          let foundFlower = flowers.find(flower => flower.id === nfr.flowerId)
+          const foundFlower = flowers.find(flower => flower.id === nfr.flowerId)
           
           return foundFlower
         })
         return foundFlowerArray
-      })
-
+    })
+      
+console.log(flowerArray)
            
           
 

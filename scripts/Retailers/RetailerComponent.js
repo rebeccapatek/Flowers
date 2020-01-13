@@ -26,10 +26,11 @@ const RetailerComponent = (retailer, dis, foundnurseryArray, flowerArray) => {
                 Flowers available at this retailer:
                 <ol>
                 ${
-                    flowerArray.map(f => {
-                        return `<li>${f.commonName}</li>`
-                    }).join("")
-                }
+                    flowerArray.map(f => 
+                        f.map(fa => {return `<li>${fa.commonName}:${fa.color}</li>`}
+                    ).join("")
+                    ).join("")
+                    }
                 </ol>
             </section>
 
