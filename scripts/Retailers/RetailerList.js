@@ -22,7 +22,8 @@ export const retailerList = () => {
            
             const dis = distributors.find(name =>
                 name.id === retailer.distributorId)
-            const nurseryRelationships = distribNur.filter(ds => ds.distributorId === retailer.id)
+            //find the distibuters with a matching distributor id to this retailer
+            const nurseryRelationships = distribNur.filter(ds => ds.distributorId === dis.id)
             const foundnurseryArray = nurseryRelationships.map(rn => {
                 const foundNursery = nurseries.find(nursery => nursery.id === rn.nurseryId)
                 return foundNursery
